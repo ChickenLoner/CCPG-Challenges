@@ -11,7 +11,7 @@ This repository contains challenges for the CyberChef Playground CTF platform.
 ## 🚀 Quick Install
 
 ### Prerequisites
-- [CyberChef Playground](https://github.com/yourusername/cyberchef-playground) installed
+- [CyberChef Playground](https://github.com/ChickenLoner/cyberchef-playground) installed
 - Git installed
 
 ### Installation
@@ -99,7 +99,7 @@ Want to add challenges to this pack?
 - **Operations List:** 300+ operations available
 
 ### CyberChef Playground
-- **Main Repo:** https://github.com/yourusername/cyberchef-playground
+- **Main Repo:** https://github.com/ChickenLoner/cyberchef-playground
 - **Documentation:** See repo README
 - **Issues:** Report bugs or request features
 
