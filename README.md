@@ -1,4 +1,4 @@
-# 🔐 CCPG Challenges - Official Challenge Pack
+# 🔐 CyberChef Playground Challenge Pack
 
 Official challenge repository for CyberChef Playground
 
