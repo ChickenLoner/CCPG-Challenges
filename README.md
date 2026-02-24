@@ -6,7 +6,7 @@ Official challenge repository for CyberChef Playground
 
 This repository contains challenges for the CyberChef Playground CTF platform.
 
-**Challenge Count:** 0   
+**Challenge Count:** 5   
 
 ## 🚀 Quick Install
 
