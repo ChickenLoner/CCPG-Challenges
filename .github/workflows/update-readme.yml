@@ -1,0 +1,43 @@
+name: Update Challenge List in README
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'challenges/**/challenge.json'   # new challenge added / challenge edited
+      - 'scripts/generate-readme.js'     # script itself updated
+  workflow_dispatch:                     # allow manual trigger from Actions tab
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write   # needed to commit back to the repo
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history so git log works correctly
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate challenge list
+        run: node scripts/generate-readme.js
+
+      - name: Commit and push if README changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No changes to README.md — skipping commit."
+          else
+            git commit -m "docs: auto-update challenge list [skip ci]"
+            git push
+          fi
