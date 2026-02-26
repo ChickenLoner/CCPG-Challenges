@@ -1,5 +1,6 @@
 {
   "id": 4,
+  "category": "Cryptography",
   "name": "ROTTWEILER",
   "description": "Classical cipher",
   "hint": "ROT13 isn't the only rotation. Try different amounts.",

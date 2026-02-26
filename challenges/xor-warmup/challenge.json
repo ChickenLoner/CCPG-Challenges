@@ -1,5 +1,6 @@
 {
   "id": 1,
+  "category": "Cryptography",
   "name": "XOR Warmup",
   "description": "A simple XOR encryption. Reverse the binary to find the key.",
   "hint": "Look for the XOR operation in the binary. The key is a single byte.",

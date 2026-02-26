@@ -1,5 +1,6 @@
 {
   "id": 2,
+  "category": "Encoding",
   "name": "Base64 Layering",
   "description": "Multiple encoding layers. What's hiding beneath?",
   "hint": "Sometimes data is encoded multiple times. Check how many layers there are.",

@@ -1,5 +1,6 @@
 {
   "id": 5,
+  "category": "Malware Analysis",
   "name": "Multi-stage ransomware",
   "description": "Ransomware-like encryption chain. Decrypt all stages to win!",
   "hint": "Multiple operations in sequence. Find all parameters and correct order.",

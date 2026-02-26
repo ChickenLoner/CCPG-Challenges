@@ -1,5 +1,6 @@
 {
   "id": 3,
+  "category": "Cryptography",
   "name": "Substitution Mystery",
   "description": "Simple substitution cipher. Can you extract the key?",
   "hint": "Look for ADD or SUB operations. The key is visible in the binary.",
