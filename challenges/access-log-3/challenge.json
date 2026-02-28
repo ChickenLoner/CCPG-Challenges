@@ -1,0 +1,15 @@
+{
+  "id": 9,
+  "category": "Log Analysis",
+  "name": "Access Log 3",
+  "description": "Following the LFI and bruteforce attacks identified in previous challenges, the incident response team believes the threat actor successfully uploaded a webshell to the compromised web server. Suricata has flagged outbound connections to a known C2 address, suggesting the attacker used the webshell to execute system commands and establish persistence.",
+  "flag": "CHEF{0bv10u5_W3b_5h3ll_17_15}",
+  "challengeFiles": [
+    {
+      "name": "Challenge Package",
+      "file": "access-log-3.zip",
+      "description": "access.log and the instruction"
+    }
+  ],
+  "validationFile": "access.log"
+}

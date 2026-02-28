@@ -1,0 +1,8 @@
+[
+  { "op": "Regular expression",
+    "args": ["User defined", "\\/page\\.php\\?file=([^ \"\\r\\n]*?(?:\\.\\.|[A-Za-z]:\\\\|\\/etc\\/|\\/proc\\/)[^ \"\\r\\n]*)", true, true, false, false, false, false, "List matches"] },
+  { "op": "Find / Replace",
+    "args": [{ "option": "Simple string", "string": "/page.php?file=" }, "", true, false, true, false] },
+  { "op": "Unique",
+    "args": ["Line feed", false] }
+]

@@ -1,0 +1,33 @@
+# Access Log 2 — HTTP Bruteforce
+
+## Scenario
+
+The same company's web server from the previous challenge is under investigation. Suricata alerts have flagged suspicious authentication activity targeting the login endpoint. The incident response team suspects one or more threat actors conducted a credential bruteforce attack against the web application.
+
+Your task focuses on the **access.log** only.
+
+## Objective
+
+Identify an **IP address** that conducted a bruteforce attack against the web server's login page and **number of failed attempts** took to that login page.
+
+## Expected Output
+
+Given the following log entries:
+
+```
+10.0.0.5 - - [01/Jan/2026:11:00:01 +0500] "POST /auth/signin.php HTTP/1.1" 200 1842 "https://shop.local/auth/signin.php" "Mozilla/5.0"
+10.0.0.5 - - [01/Jan/2026:11:00:18 +0500] "POST /auth/signin.php HTTP/1.1" 302 0 "https://shop.local/auth/signin.php" "Mozilla/5.0"
+192.168.1.50 - - [01/Jan/2026:11:00:02 +0500] "POST /auth/signin.php HTTP/1.1" 200 1842 "https://shop.local/auth/signin.php" "python-requests/2.31.0"
+192.168.1.50 - - [01/Jan/2026:11:00:03 +0500] "POST /auth/signin.php HTTP/1.1" 200 1842 "https://shop.local/auth/signin.php" "python-requests/2.31.0"
+192.168.1.50 - - [01/Jan/2026:11:00:04 +0500] "POST /auth/signin.php HTTP/1.1" 200 1842 "https://shop.local/auth/signin.php" "python-requests/2.31.0"
+192.168.1.50 - - [01/Jan/2026:11:00:05 +0500] "POST /auth/signin.php HTTP/1.1" 200 1842 "https://shop.local/auth/signin.php" "python-requests/2.31.0"
+192.168.1.50 - - [01/Jan/2026:11:00:06 +0500] "POST /auth/signin.php HTTP/1.1" 302 0 "https://shop.local/auth/signin.php" "python-requests/2.31.0"
+```
+
+Your output should be:
+
+```
+4 192.168.1.50
+```
+
+## Good luck!

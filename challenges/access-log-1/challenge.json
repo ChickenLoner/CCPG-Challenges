@@ -1,0 +1,15 @@
+{
+  "id": 7,
+  "category": "Log Analysis",
+  "name": "Access Log 1",
+  "description": "A company's web server was recently compromised in what became a catastrophic breach. The incident response team has recovered the `access.log` from the web server and Suricata alerts have confirmed multiple attack types were directed at this server.",
+  "flag": "CHEF{C3r71f13d_LF1_p4yl04d_hun73r}",
+  "challengeFiles": [
+    {
+      "name": "Challenge Package",
+      "file": "access-log-1.zip",
+      "description": "access.log and the instruction"
+    }
+  ],
+  "validationFile": "access.log"
+}

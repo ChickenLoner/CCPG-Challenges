@@ -1,0 +1,36 @@
+# Access Log 3 — Web Shell Detected
+
+## Scenario
+
+Following the LFI and bruteforce attacks identified in previous challenges, the incident response team believes the threat actor successfully uploaded a webshell to the compromised web server. Suricata has flagged outbound connections to a known C2 address, suggesting the attacker used the webshell to execute system commands and establish persistence.
+
+Your task focuses on the **access.log** only.
+
+## Objective
+
+Extract all **unique commands** executed by the threat actor through the webshell, regardless of the IP address used.
+
+> **Note:** Commands in the log are URL-encoded. Your output should be the **decoded** (human-readable) form of each command. List each unique command only once.
+
+## Example
+
+Given the following log entries:
+
+```
+45.155.205.233 - - [01/Jan/2026:14:22:01 +0500] "GET /images/.thumb_cache.php?q=whoami HTTP/1.1" 200 84 "-" "Mozilla/5.0"
+45.155.205.233 - - [01/Jan/2026:14:22:18 +0500] "GET /images/.thumb_cache.php?q=cat%20%2Fetc%2Fpasswd HTTP/1.1" 200 1842 "-" "Mozilla/5.0"
+45.155.205.233 - - [01/Jan/2026:14:22:45 +0500] "GET /images/.thumb_cache.php?q=uname%20-a HTTP/1.1" 200 156 "-" "Mozilla/5.0"
+45.155.205.233 - - [01/Jan/2026:14:23:02 +0500] "GET /images/.thumb_cache.php?q=cat%20%2Fetc%2Fpasswd HTTP/1.1" 200 1842 "-" "Mozilla/5.0"
+```
+
+Your output should be:
+
+```
+whoami
+cat /etc/passwd
+uname -a
+```
+
+> Notice that `cat /etc/passwd` was executed twice — it is only listed once in the answer. Also notice the commands are URL-decoded (`%20` → space, `%2F` → `/`).
+
+## Good luck!

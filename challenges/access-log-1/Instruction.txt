@@ -1,0 +1,34 @@
+# Access Log 1 — Local File Inclusion
+
+## Scenario
+
+A company's web server was recently compromised in what became a catastrophic breach. The incident response team has recovered the `access.log` from the web server and Suricata alerts have confirmed multiple attack types were directed at this server.
+
+Your task focuses on the **access.log** only.
+
+## Objective
+
+Extract all **unique payloads** utilized by the threat actor to exploit **Local File Inclusion (LFI) / Arbitrary File Read** on the web server, regardless of the IP address used to carry out the attack.
+
+> **Note:** List each unique payload only once, in its raw form as it appears in the log (do not decode URL encoding).
+
+## Expected Output
+
+Given the following log entries:
+
+```
+127.0.0.1 - - [01/Jan/2026:11:00:11 +0500] "GET /view.php?doc=../../../etc/hosts HTTP/1.1" 200 1175 "-" "python-requests/2.31.0"
+127.0.0.1 - - [01/Jan/2026:11:00:12 +0500] "GET /view.php?doc=../../../etc/shadow HTTP/1.1" 200 1200 "-" "python-requests/2.31.0"
+10.0.0.5 - - [01/Jan/2026:11:00:15 +0500] "GET /view.php?doc=../../../etc/hosts HTTP/1.1" 200 1175 "-" "Mozilla/5.0"
+```
+
+Your output should be:
+
+```
+../../../etc/hosts
+../../../etc/shadow
+```
+
+> Notice that `../../../etc/hosts` appears twice from two different IPs — it is only listed once in the answer.
+
+## Good luck!

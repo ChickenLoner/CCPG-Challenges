@@ -1,0 +1,15 @@
+{
+  "id": 8,
+  "category": "Log Analysis",
+  "name": "Access Log 2",
+  "description": "The same company's web server from the previous challenge is under investigation. Suricata alerts have flagged suspicious authentication activity targeting the login endpoint. The incident response team suspects one or more threat actors conducted a credential bruteforce attack against the web application.",
+  "flag": "CHEF{W00h_Y0u_H4v3_N071c3d_17}",
+  "challengeFiles": [
+    {
+      "name": "Challenge Package",
+      "file": "access-log-2.zip",
+      "description": "access.log and the instruction"
+    }
+  ],
+  "validationFile": "access.log"
+}
