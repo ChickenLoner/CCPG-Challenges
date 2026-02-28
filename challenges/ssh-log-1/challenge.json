@@ -1,0 +1,15 @@
+{
+  "id": 10,
+  "category": "Log Analysis",
+  "name": "SSH Brute Force 1",
+  "description": "Following the web application attack, the threat actor discovered SSH port opened on the web server, find out what happened before the breach occured!",
+  "flag": "CHEF{50_Y0u_F1n4lly_N071c3_M3_53np41}",
+  "challengeFiles": [
+    {
+      "name": "Challenge Package",
+      "file": "ssh-log-1.zip",
+      "description": "auth.log and the instruction"
+    }
+  ],
+  "validationFile": "auth.log"
+}

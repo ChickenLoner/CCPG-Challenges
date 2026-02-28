@@ -1,0 +1,15 @@
+{
+  "id": 11,
+  "category": "Log Analysis",
+  "name": "SSH Brute Force 2",
+  "description": "After Identified an IP address used to target SSH port running on web server, find out how many unique usernames were used in this attack",
+  "flag": "CHEF{N0w_c0un7_up_y0ur_51n5}",
+  "challengeFiles": [
+    {
+      "name": "Challenge Package",
+      "file": "ssh-log-2.zip",
+      "description": "auth.log and the instruction"
+    }
+  ],
+  "validationFile": "auth.log"
+}

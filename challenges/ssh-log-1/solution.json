@@ -1,0 +1,14 @@
+[
+  { "op": "Filter",
+    "args": ["Line feed", "Failed", false] },
+  { "op": "Extract IP addresses",
+    "args": [true, false, false, false, false, false] },
+  { "op": "Unique",
+    "args": ["Line feed", true] },
+  { "op": "Sort",
+    "args": ["Line feed", true, "Numeric"] },
+  { "op": "Head",
+    "args": ["Line feed", 1] },
+  { "op": "Extract IP addresses",
+    "args": [true, false, false, false, false, false] }
+]

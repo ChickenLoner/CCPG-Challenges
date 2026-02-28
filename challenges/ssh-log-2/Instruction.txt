@@ -1,0 +1,37 @@
+# Secure Shell 2 — Catch the payload!
+
+## Scenario
+
+After Identified an IP address used to target SSH port running on web server, find out how many unique usernames were used in this attack.
+
+Your task focuses on the **auth.log** only.
+
+## Objective
+
+Extract all **unique usernames** used by the threat actor to conduct SSH bruteforce attack and sort alphabetically.
+
+## Example
+
+Given the following log entries:
+
+```
+Feb 28 20:36:57 brightmall-web01 sshd[29559]: Failed password for devops from 10.0.0.10 port 60693 ssh2
+Feb 28 20:38:00 brightmall-web01 sshd[41063]: Failed password for jenkins from 172.16.1.100 port 59247 ssh2
+Feb 28 20:40:26 brightmall-web01 sshd[21026]: Failed password for invalid user oracle from 185.156.73.54 port 57093 ssh2
+Feb 28 20:40:35 brightmall-web01 sshd[39526]: Failed password for mysql from 185.156.73.54 port 57066 ssh2
+Feb 28 20:40:38 brightmall-web01 sshd[54023]: Failed password for www-data from 185.156.73.54 port 62187 ssh2
+Feb 28 20:40:48 brightmall-web01 sshd[13671]: Failed password for sysadmin from 185.156.73.54 port 64614 ssh2
+Feb 28 20:40:57 brightmall-web01 sshd[52277]: Failed password for webadmin from 185.156.73.54 port 43826 ssh2
+```
+
+Your output should be:
+
+```
+mysql
+oracle
+sysadmin
+webadmin
+www-data
+```
+
+## Good luck!

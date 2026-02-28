@@ -1,0 +1,12 @@
+[
+  { "op": "Filter",
+    "args": ["Line feed", "Failed", false] },
+  { "op": "Filter",
+    "args": ["Line feed", "89.248.167.131", false] },
+  { "op": "Regular expression",
+    "args": ["User defined", "Failed password for (?:invalid user )?([^\\s]+)", true, true, false, false, false, false, "List capture groups"] },
+  { "op": "Sort",
+    "args": ["Line feed", false, "Alphabetical (case sensitive)"] },
+  { "op": "Unique",
+    "args": ["Line feed", false] }
+]
