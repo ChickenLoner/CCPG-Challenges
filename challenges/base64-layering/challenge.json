@@ -1,6 +1,6 @@
 {
   "id": 2,
-  "category": "Encoding",
+  "category": "Reversing",
   "name": "Base64 Layering",
   "description": "Multiple encoding layers. What's hiding beneath?",
   "hint": "Sometimes data is encoded multiple times. Check how many layers there are.",
@@ -8,9 +8,9 @@
   "challengeFiles": [
     {
       "name": "Challenge Package",
-      "file": "level2_challenge.zip",
+      "file": "base64-layering.zip",
       "description": "Binary and sample encrypted file"
     }
   ],
-  "validationFile": "level2_validation.bin"
+  "validationFile": "base64-layering_validation.bin"
 }

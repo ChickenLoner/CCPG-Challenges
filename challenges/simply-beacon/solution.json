@@ -1,0 +1,12 @@
+[
+  { "op": "From Base64",
+    "args": ["A-Za-z0-9+/=", true, false] },
+  { "op": "XOR",
+    "args": [{ "option": "Hex", "string": "77" }, "Standard", false] },
+  { "op": "Regular expression",
+    "args": ["User defined", "[A-Za-z0-9+/]{100,}={0,2}", true, true, false, false, false, false, "List matches"] },
+  { "op": "From Base64",
+    "args": ["A-Za-z0-9+/=", true, false] },
+  { "op": "XOR",
+    "args": [{ "option": "Decimal", "string": "35" }, "Standard", false] }
+]

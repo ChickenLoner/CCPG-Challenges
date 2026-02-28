@@ -1,6 +1,6 @@
 {
   "id": 1,
-  "category": "Cryptography",
+  "category": "Reversing",
   "name": "XOR Warmup",
   "description": "A simple XOR encryption. Reverse the binary to find the key.",
   "hint": "Look for the XOR operation in the binary. The key is a single byte.",
@@ -8,9 +8,9 @@
   "challengeFiles": [
     {
       "name": "Challenge Package",
-      "file": "level1_challenge.zip",
+      "file": "xor-warmup.zip",
       "description": "Binary and sample encrypted file"
     }
   ],
-  "validationFile": "level1_validation.bin"
+  "validationFile": "xor-warmup_validation.bin"
 }

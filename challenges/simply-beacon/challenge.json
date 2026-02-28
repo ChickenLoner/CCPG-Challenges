@@ -1,0 +1,15 @@
+{
+  "id": 6,
+  "category": "Malware Analysis",
+  "name": "Simply Beacon",
+  "description": "We detected lateral movement using Cobalt Stike in our environment, create a recipe to extract final payload of its dropper",
+  "flag": "CHEF{4-l177l3-C5-B34C0N-3X7R4C73D}",
+  "challengeFiles": [
+    {
+      "name": "Challenge Package",
+      "file": "simply_beacon.zip",
+      "description": "Zip file contains beacon and instruction"
+    }
+  ],
+  "validationFile": "simply_beacon_validation.bin"
+}
