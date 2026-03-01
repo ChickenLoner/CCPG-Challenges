@@ -1,0 +1,15 @@
+{
+  "id": 12,
+  "category": "Malware Analysis",
+  "name": "VBS Dropper called who?",
+  "description": "A vbs file dropped, network connection were made, let's block that before it can reach out to its friends!",
+  "flag": "CHEF{}",
+  "challengeFiles": [
+    {
+      "name": "Challenge Package",
+      "file": "vbs-dropper-package.zip",
+      "description": "malware sample and the instruction"
+    }
+  ],
+  "validationFile": "vbs-dropper_validation.bin"
+}

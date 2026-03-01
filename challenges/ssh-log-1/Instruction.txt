@@ -10,7 +10,7 @@ Your task focuses on the **auth.log** only.
 
 Identify an IP address used by the threat actor to conduct SSH bruteforce attack against this server.
 
-## Example
+## Expected Output
 
 Given the following log entries:
 
