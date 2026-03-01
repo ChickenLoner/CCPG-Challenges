@@ -3,7 +3,7 @@
   "category": "Malware Analysis",
   "name": "VBS Dropper called who?",
   "description": "A vbs file dropped, network connection were made, let's block that before it can reach out to its friends!",
-  "flag": "CHEF{}",
+  "flag": "CHEF{friends_called_but_we_know_them}",
   "challengeFiles": [
     {
       "name": "Challenge Package",
